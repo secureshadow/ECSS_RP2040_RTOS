@@ -1,4 +1,4 @@
-# 🚀 Dev Branch Overview 🌌
+# 🚀 Master Branch Overview 🌌
 
 ## Introduction 🌟
 Welcome to the `master` branch, where we're 🛠 integrating FreeRTOS with ECSS services for a stellar 🌠 educational journey in space standards!
