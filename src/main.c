@@ -1,11 +1,11 @@
 #include <stdio.h>
-
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
-
 #include "FreeRTOS.h"
 #include "FreeRTOSConfig.h"
 #include "task.h"
+#include "hardware/i2c.h"
+#include <queue.h>
 
 void blinkled_task(void *params) {
     const uint LED_PIN = 25;

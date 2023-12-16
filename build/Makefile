@@ -758,6 +758,30 @@ pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
+pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+pico-sdk/src/rp2_common/hardware_i2c/i2c.i: pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+pico-sdk/src/rp2_common/hardware_i2c/i2c.s: pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 pico-sdk/src/rp2_common/hardware_irq/irq.obj: pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_irq/irq.obj
 
@@ -1472,6 +1496,9 @@ help:
 	@echo "... pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... pico-sdk/src/rp2_common/hardware_i2c/i2c.obj"
+	@echo "... pico-sdk/src/rp2_common/hardware_i2c/i2c.i"
+	@echo "... pico-sdk/src/rp2_common/hardware_i2c/i2c.s"
 	@echo "... pico-sdk/src/rp2_common/hardware_irq/irq.obj"
 	@echo "... pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... pico-sdk/src/rp2_common/hardware_irq/irq.s"

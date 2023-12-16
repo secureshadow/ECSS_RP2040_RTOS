@@ -67,6 +67,10 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/blink.dir/src/main.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/blink.dir/src/main.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/blink.dir/src/main.c.obj
+ .text.i2c_setup
+                0x0000000000000000       0x38 CMakeFiles/blink.dir/src/main.c.obj
+ .text.bmp180_check
+                0x0000000000000000       0x58 CMakeFiles/blink.dir/src/main.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -90,8 +94,6 @@ Discarded input sections
                 0x0000000000000000       0x28 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_get_function
                 0x0000000000000000       0x14 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .text.gpio_set_pulls
-                0x0000000000000000       0x30 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_irqover
                 0x0000000000000000       0x24 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_inover
@@ -1051,15 +1053,38 @@ Discarded input sections
                 0x0000000000000000        0x8 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_70.1
                 0x0000000000000000        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_write_blocking_internal
+                0x0000000000000000      0x198 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_read_blocking_internal
+                0x0000000000000000      0x110 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_deinit
+                0x0000000000000000       0x20 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_set_slave_mode
+                0x0000000000000000       0x40 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_write_blocking
+                0x0000000000000000       0xd0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_write_blocking_until
+                0x0000000000000000       0x48 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_write_timeout_per_char_us
+                0x0000000000000000       0x48 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_read_blocking_until
+                0x0000000000000000       0x48 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_read_timeout_per_char_us
+                0x0000000000000000       0x48 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .data.i2c1_inst
+                0x0000000000000000        0x8 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .data          0x0000000000000000        0x0 libFreeRTOS.a(timers.c.obj)
  .bss           0x0000000000000000        0x0 libFreeRTOS.a(port.c.obj)
  .data          0x0000000000000000        0x0 libFreeRTOS.a(heap_4.c.obj)
  .data          0x0000000000000000        0x0 libFreeRTOS.a(list.c.obj)
  .bss           0x0000000000000000        0x0 libFreeRTOS.a(list.c.obj)
  .data          0x0000000000000000        0x0 libFreeRTOS.a(queue.c.obj)
- .text          0x0000000000000000        0x0 /tmp/ccPki0EN.o
- .data          0x0000000000000000        0x0 /tmp/ccPki0EN.o
- .bss           0x0000000000000000        0x0 /tmp/ccPki0EN.o
+ .text          0x0000000000000000        0x0 /tmp/ccC7Gadk.o
+ .data          0x0000000000000000        0x0 /tmp/ccC7Gadk.o
+ .bss           0x0000000000000000        0x0 /tmp/ccC7Gadk.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1323,11 +1348,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccPki0EN.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccC7Gadk.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x52b0
+.text           0x0000000010000100     0x54f0
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1385,329 +1410,341 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x00000000100002b8                _init
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x00000000100002bc       0x98 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
- .text.blinkled_task
-                0x0000000010000354       0x28 CMakeFiles/blink.dir/src/main.c.obj
-                0x0000000010000354                blinkled_task
+ .text.led_task
+                0x0000000010000354       0x70 CMakeFiles/blink.dir/src/main.c.obj
+                0x0000000010000354                led_task
  .text.startup.main
-                0x000000001000037c       0x2c CMakeFiles/blink.dir/src/main.c.obj
-                0x000000001000037c                main
+                0x00000000100003c4       0x2c CMakeFiles/blink.dir/src/main.c.obj
+                0x00000000100003c4                main
  .text.gpio_set_function
-                0x00000000100003a8       0x30 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x00000000100003a8                gpio_set_function
+                0x00000000100003f0       0x30 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000100003f0                gpio_set_function
+ .text.gpio_set_pulls
+                0x0000000010000420       0x30 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000420                gpio_set_pulls
  .text.gpio_init
-                0x00000000100003d8       0x3c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x00000000100003d8                gpio_init
+                0x0000000010000450       0x3c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000450                gpio_init
  .text.running_on_fpga
-                0x0000000010000414       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x0000000010000414                running_on_fpga
+                0x000000001000048c       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x000000001000048c                running_on_fpga
  .text.hw_claim_or_assert
-                0x0000000010000424       0x44 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000424                hw_claim_or_assert
+                0x000000001000049c       0x44 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x000000001000049c                hw_claim_or_assert
  .text.spin_locks_reset
-                0x0000000010000468       0x1c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000468                spin_locks_reset
+                0x00000000100004e0       0x1c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100004e0                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x0000000010000484       0x18 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000484                next_striped_spin_lock_num
+                0x00000000100004fc       0x18 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100004fc                next_striped_spin_lock_num
  .text.irq_set_enabled
-                0x000000001000049c       0x24 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000001000049c                irq_set_enabled
+                0x0000000010000514       0x24 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000514                irq_set_enabled
  .text.irq_get_vtable_handler
-                0x00000000100004c0       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100004c0                irq_get_vtable_handler
+                0x0000000010000538       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000538                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x00000000100004d0       0x54 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100004d0                irq_set_exclusive_handler
+                0x0000000010000548       0x54 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000548                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x0000000010000524      0x1b0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000524                irq_remove_handler
+                0x000000001000059c      0x1b0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000059c                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x00000000100006d4       0xb4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100006d4                irq_add_tail_to_free_list
+                0x000000001000074c       0xb4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000074c                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010000788       0x24 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000788                irq_init_priorities
+                0x0000000010000800       0x24 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000800                irq_init_priorities
  .text.lock_init
-                0x00000000100007ac       0x10 CMakeFiles/blink.dir/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x00000000100007ac                lock_init
+                0x0000000010000824       0x10 CMakeFiles/blink.dir/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000010000824                lock_init
  .text.mutex_init
-                0x00000000100007bc       0x1c CMakeFiles/blink.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000100007bc                mutex_init
+                0x0000000010000834       0x1c CMakeFiles/blink.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010000834                mutex_init
  .text.recursive_mutex_init
-                0x00000000100007d8       0x1c CMakeFiles/blink.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000100007d8                recursive_mutex_init
+                0x0000000010000850       0x1c CMakeFiles/blink.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010000850                recursive_mutex_init
  .text.timer_pool_entry_comparator
-                0x00000000100007f4       0x34 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100007f4                timer_pool_entry_comparator
+                0x000000001000086c       0x34 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000086c                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x0000000010000828       0x30 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100008a0       0x30 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x0000000010000858      0x100 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100008d0      0x100 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010000958      0x1bc CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100009d0      0x1bc CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010000b14       0x6c CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000b14                alarm_pool_init_default
+                0x0000000010000b8c       0x6c CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000b8c                alarm_pool_init_default
  .text.alarm_pool_add_alarm_at
-                0x0000000010000b80      0x178 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000b80                alarm_pool_add_alarm_at
+                0x0000000010000bf8      0x178 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000bf8                alarm_pool_add_alarm_at
  .text.best_effort_wfe_or_timeout
-                0x0000000010000cf8       0xd4 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000cf8                best_effort_wfe_or_timeout
+                0x0000000010000d70       0xd4 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d70                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x0000000010000dcc       0xbc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000e44       0xbc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000010000e88       0x18 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000e88                hardware_alarm_claim
+                0x0000000010000f00       0x18 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000f00                hardware_alarm_claim
  .text.time_us_64
-                0x0000000010000ea0       0x14 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000ea0                time_us_64
+                0x0000000010000f18       0x14 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000f18                time_us_64
  .text.busy_wait_us
-                0x0000000010000eb4       0x54 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000eb4                busy_wait_us
+                0x0000000010000f2c       0x54 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000f2c                busy_wait_us
  .text.hardware_alarm_set_callback
-                0x0000000010000f08       0x8c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000f08                hardware_alarm_set_callback
+                0x0000000010000f80       0x8c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000f80                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010000f94       0xd4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000f94                hardware_alarm_set_target
+                0x000000001000100c       0xd4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000001000100c                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010001068       0x3c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001068                hardware_alarm_cancel
+                0x00000000100010e0       0x3c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100010e0                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x00000000100010a4       0x68 CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x000000001000111c       0x68 CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x000000001000110c       0x3c CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x000000001000110c                ph_post_alloc_init
+                0x0000000010001184       0x3c CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001184                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010001148       0x90 CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001148                ph_merge_two_pass
+                0x00000000100011c0       0x90 CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100011c0                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x00000000100011d8      0x100 CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001250      0x100 CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x00000000100012d8      0x104 CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100012d8                ph_remove_head
+                0x0000000010001350      0x104 CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001350                ph_remove_head
  .text.ph_remove_and_free_node
-                0x00000000100013dc       0x7c CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100013dc                ph_remove_and_free_node
+                0x0000000010001454       0x7c CMakeFiles/blink.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001454                ph_remove_and_free_node
  .text.uart_init
-                0x0000000010001458      0x188 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x0000000010001458                uart_init
+                0x00000000100014d0      0x188 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x00000000100014d0                uart_init
  .text.clocks_init
-                0x00000000100015e0      0x2d0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000100015e0                clocks_init
+                0x0000000010001658      0x2d0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010001658                clocks_init
  .text.clock_get_hz
-                0x00000000100018b0        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000100018b0                clock_get_hz
+                0x0000000010001928        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010001928                clock_get_hz
  .text.pll_init
-                0x00000000100018bc       0xa0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x00000000100018bc                pll_init
+                0x0000000010001934       0xa0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000010001934                pll_init
  .text.watchdog_start_tick
-                0x000000001000195c       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x000000001000195c                watchdog_start_tick
+                0x00000000100019d4       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x00000000100019d4                watchdog_start_tick
  .text.xosc_init
-                0x000000001000196c       0x28 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x000000001000196c                xosc_init
+                0x00000000100019e4       0x28 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x00000000100019e4                xosc_init
  .text.runtime_init
-                0x0000000010001994       0xf0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001994                runtime_init
- .text._exit    0x0000000010001a84        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001a84                _exit
- .text.exit     0x0000000010001a88        0x8 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001a88                exit
- .text.panic    0x0000000010001a90       0x30 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001a90                panic
+                0x0000000010001a0c       0xf0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001a0c                runtime_init
+ .text._exit    0x0000000010001afc        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001afc                _exit
+ .text.exit     0x0000000010001b00        0x8 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001b00                exit
+ .text.panic    0x0000000010001b08       0x30 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001b08                panic
  .text.hard_assertion_failure
-                0x0000000010001ac0        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001ac0                hard_assertion_failure
+                0x0000000010001b38        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001b38                hard_assertion_failure
  .text._out_char
-                0x0000000010001acc       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001b44       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_vprintf
-                0x0000000010001adc       0x30 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010001adc                weak_raw_vprintf
- .text          0x0000000010001b0c       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000010001b54       0x30 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001b54                weak_raw_vprintf
+ .text          0x0000000010001b84       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x0000000010001b1c       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010001b1c                rom_func_lookup
+                0x0000000010001b94       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010001b94                rom_func_lookup
  .text.rom_data_lookup
-                0x0000000010001b2c       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010001b2c                rom_data_lookup
+                0x0000000010001ba4       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010001ba4                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000010001b3c       0x44 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010001b3c                rom_funcs_lookup
+                0x0000000010001bb4       0x44 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010001bb4                rom_funcs_lookup
  .text.__wrap___aeabi_uidiv
-                0x0000000010001b80       0x4c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010001b80                __wrap___aeabi_uidiv
-                0x0000000010001b80                __wrap___aeabi_uidivmod
-                0x0000000010001b80                div_u32u32
-                0x0000000010001b80                divmod_u32u32
-                0x0000000010001b88                divmod_u32u32_unsafe
-                0x0000000010001bb0                divmod_u32u32_savestate
+                0x0000000010001bf8       0x4c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010001bf8                __wrap___aeabi_uidiv
+                0x0000000010001bf8                __wrap___aeabi_uidivmod
+                0x0000000010001bf8                div_u32u32
+                0x0000000010001bf8                divmod_u32u32
+                0x0000000010001c00                divmod_u32u32_unsafe
+                0x0000000010001c28                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x0000000010001bcc       0x94 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010001bcc                __aeabi_double_init
+                0x0000000010001c44       0x94 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010001c44                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010001c60       0x2c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010001c60                double_table_shim_on_use_helper
+                0x0000000010001cd8       0x2c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010001cd8                double_table_shim_on_use_helper
  .text.__aeabi_float_init
-                0x0000000010001c8c       0x64 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000010001c8c                __aeabi_float_init
+                0x0000000010001d04       0x64 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010001d04                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x0000000010001cf0       0x2c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x0000000010001cf0                float_table_shim_on_use_helper
- .text          0x0000000010001d1c       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010001d1c                __aeabi_mem_init
- .text.memset   0x0000000010001d2c        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010001d2c                __wrap_memset
- .text.memcpy   0x0000000010001d38        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010001d38                __wrap___aeabi_memcpy
-                0x0000000010001d38                __wrap_memcpy
+                0x0000000010001d68       0x2c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x0000000010001d68                float_table_shim_on_use_helper
+ .text          0x0000000010001d94       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010001d94                __aeabi_mem_init
+ .text.memset   0x0000000010001da4        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010001da4                __wrap_memset
+ .text.memcpy   0x0000000010001db0        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010001db0                __wrap___aeabi_memcpy
+                0x0000000010001db0                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x0000000010001d44       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010001dbc       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x0000000010001d54       0xb4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010001dcc       0xb4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x0000000010001e08       0xfc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010001e80       0xfc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010001f04       0x98 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010001f04                __wrap_putchar
+                0x0000000010001f7c       0x98 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010001f7c                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010001f9c       0x3c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010001f9c                __wrap_puts
+                0x0000000010002014       0x3c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002014                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x0000000010001fd8       0x30 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010001fd8                stdio_set_driver_enabled
+                0x0000000010002050       0x30 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002050                stdio_set_driver_enabled
  .text.stdio_init_all
-                0x0000000010002008        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010002008                stdio_init_all
+                0x0000000010002080        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002080                stdio_init_all
  .text.stdio_uart_out_chars
-                0x0000000010002014       0x4c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000208c       0x4c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x0000000010002060       0x84 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010002060                stdio_uart_in_chars
+                0x00000000100020d8       0x84 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100020d8                stdio_uart_in_chars
  .text.on_uart_rx
-                0x00000000100020e4       0x28 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000215c       0x28 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_set_chars_available_callback
-                0x000000001000210c       0x8c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010002184       0x8c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_init
-                0x0000000010002198       0x48 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010002198                stdio_uart_init
- .text          0x00000000100021e0     0x1554 libFreeRTOS.a(tasks.c.obj)
-                0x00000000100024dc                xTaskCreate
-                0x0000000010002638                vTaskDelete
-                0x00000000100026d0                uxTaskPriorityGet
-                0x00000000100026f0                uxTaskPriorityGetFromISR
-                0x0000000010002710                vTaskPrioritySet
-                0x00000000100027c0                vTaskSuspend
-                0x00000000100028f0                vTaskResume
-                0x0000000010002984                xTaskResumeFromISR
-                0x0000000010002a40                vTaskStartScheduler
-                0x0000000010002ad8                vTaskEndScheduler
-                0x0000000010002aec                vTaskSuspendAll
-                0x0000000010002afc                xTaskResumeAll
-                0x0000000010002c30                xTaskDelayUntil
-                0x0000000010002cc8                vTaskDelay
-                0x0000000010002d34                xTaskGetTickCount
-                0x0000000010002d40                xTaskGetTickCountFromISR
-                0x0000000010002d4c                uxTaskGetNumberOfTasks
-                0x0000000010002d58                pcTaskGetName
-                0x0000000010002d6c                xTaskCatchUpTicks
-                0x0000000010002d90                xTaskIncrementTick
-                0x0000000010002db0                vTaskSwitchContext
-                0x0000000010002e40                vTaskPlaceOnEventList
-                0x0000000010002ecc                vTaskPlaceOnUnorderedEventList
-                0x0000000010002f7c                vTaskPlaceOnEventListRestricted
-                0x0000000010003034                xTaskRemoveFromEventList
-                0x00000000100030fc                vTaskRemoveFromUnorderedEventList
-                0x0000000010003194                vTaskSetTimeOutState
-                0x00000000100031b0                vTaskInternalSetTimeOutState
-                0x00000000100031c0                xTaskCheckForTimeOut
-                0x0000000010003210                vTaskMissedYield
-                0x000000001000321c                vTaskSetThreadLocalStoragePointer
-                0x0000000010003238                pvTaskGetThreadLocalStoragePointer
-                0x0000000010003258                xTaskGetCurrentTaskHandle
-                0x0000000010003264                xTaskGetSchedulerState
-                0x000000001000327c                uxTaskResetEventItemValue
-                0x0000000010003294                ulTaskGenericNotifyTake
-                0x0000000010003328                xTaskGenericNotifyWait
-                0x00000000100033dc                xTaskGenericNotify
-                0x00000000100034c4                xTaskGenericNotifyFromISR
-                0x00000000100035f0                vTaskGenericNotifyGiveFromISR
-                0x00000000100036d4                xTaskGenericNotifyStateClear
-                0x0000000010003704                ulTaskGenericNotifyValueClear
- .text          0x0000000010003734      0x564 libFreeRTOS.a(timers.c.obj)
-                0x0000000010003a58                xTimerCreateTimerTask
-                0x0000000010003ad0                xTimerCreate
-                0x0000000010003b78                xTimerGenericCommandFromTask
-                0x0000000010003bbc                xTimerGenericCommandFromISR
-                0x0000000010003bec                xTimerGetTimerDaemonTaskHandle
-                0x0000000010003bf8                xTimerGetPeriod
-                0x0000000010003bfc                vTimerSetReloadMode
-                0x0000000010003c20                xTimerGetReloadMode
-                0x0000000010003c38                uxTimerGetReloadMode
-                0x0000000010003c50                xTimerGetExpiryTime
-                0x0000000010003c54                pcTimerGetName
-                0x0000000010003c58                xTimerIsTimerActive
-                0x0000000010003c70                pvTimerGetTimerID
-                0x0000000010003c84                vTimerSetTimerID
- *fill*         0x0000000010003c98        0x8 
- .text          0x0000000010003ca0      0x194 libFreeRTOS.a(port.c.obj)
-                0x0000000010003ce4                pxPortInitialiseStack
-                0x0000000010003d04                isr_svcall
-                0x0000000010003d08                vPortEndScheduler
-                0x0000000010003d0c                vPortYield
-                0x0000000010003d24                vPortEnterCritical
-                0x0000000010003d3c                vPortExitCritical
-                0x0000000010003d50                ulSetInterruptMaskFromISR
-                0x0000000010003d58                vClearInterruptMaskFromISR
-                0x0000000010003d60                isr_pendsv
-                0x0000000010003da4                isr_systick
-                0x0000000010003dc8                vPortSetupTimerInterrupt
-                0x0000000010003df0                xPortStartScheduler
- .text          0x0000000010003e34      0x258 libFreeRTOS.a(heap_4.c.obj)
-                0x0000000010003e34                pvPortMalloc
-                0x0000000010003f2c                vPortFree
-                0x0000000010003fa8                xPortGetFreeHeapSize
-                0x0000000010003fb4                xPortGetMinimumEverFreeHeapSize
-                0x0000000010003fc0                vPortInitialiseBlocks
-                0x0000000010003fc4                pvPortCalloc
-                0x0000000010004010                vPortGetHeapStats
- .text          0x000000001000408c       0x8c libFreeRTOS.a(list.c.obj)
-                0x000000001000408c                vListInitialise
-                0x00000000100040a4                vListInitialiseItem
-                0x00000000100040ac                vListInsertEnd
-                0x00000000100040c4                vListInsert
-                0x00000000100040f4                uxListRemove
- .text          0x0000000010004118     0x1204 libFreeRTOS.a(queue.c.obj)
-                0x0000000010004118                xQueueGenericReset
-                0x00000000100041b8                xQueueGenericCreate
-                0x0000000010004250                xQueueGenericSend
-                0x0000000010004568                xQueueGenericSendFromISR
-                0x0000000010004680                xQueueGiveFromISR
-                0x00000000100046ec                xQueueReceive
-                0x000000001000498c                xQueueSemaphoreTake
-                0x0000000010004c10                xQueuePeek
-                0x0000000010004eac                xQueueReceiveFromISR
-                0x0000000010004f3c                xQueuePeekFromISR
-                0x0000000010004f7c                uxQueueMessagesWaiting
-                0x0000000010004f90                uxQueueSpacesAvailable
-                0x0000000010004fa8                uxQueueMessagesWaitingFromISR
-                0x0000000010004fac                vQueueDelete
-                0x000000001000502c                uxQueueGetQueueItemSize
-                0x0000000010005030                uxQueueGetQueueLength
-                0x0000000010005034                xQueueIsQueueEmptyFromISR
-                0x000000001000503c                xQueueIsQueueFullFromISR
-                0x0000000010005048                vQueueAddToRegistry
-                0x0000000010005160                pcQueueGetName
-                0x00000000100051d4                vQueueUnregisterQueue
-                0x000000001000524c                vQueueWaitForMessageRestricted
- .text          0x000000001000531c       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x000000001000531c                strlen
+                0x0000000010002210       0x48 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010002210                stdio_uart_init
+ .text.i2c_set_baudrate
+                0x0000000010002258       0xc4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010002258                i2c_set_baudrate
+ .text.i2c_init
+                0x000000001000231c       0x54 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x000000001000231c                i2c_init
+ .text.i2c_read_blocking
+                0x0000000010002370       0xac CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010002370                i2c_read_blocking
+ .text          0x000000001000241c     0x1554 libFreeRTOS.a(tasks.c.obj)
+                0x0000000010002718                xTaskCreate
+                0x0000000010002874                vTaskDelete
+                0x000000001000290c                uxTaskPriorityGet
+                0x000000001000292c                uxTaskPriorityGetFromISR
+                0x000000001000294c                vTaskPrioritySet
+                0x00000000100029fc                vTaskSuspend
+                0x0000000010002b2c                vTaskResume
+                0x0000000010002bc0                xTaskResumeFromISR
+                0x0000000010002c7c                vTaskStartScheduler
+                0x0000000010002d14                vTaskEndScheduler
+                0x0000000010002d28                vTaskSuspendAll
+                0x0000000010002d38                xTaskResumeAll
+                0x0000000010002e6c                xTaskDelayUntil
+                0x0000000010002f04                vTaskDelay
+                0x0000000010002f70                xTaskGetTickCount
+                0x0000000010002f7c                xTaskGetTickCountFromISR
+                0x0000000010002f88                uxTaskGetNumberOfTasks
+                0x0000000010002f94                pcTaskGetName
+                0x0000000010002fa8                xTaskCatchUpTicks
+                0x0000000010002fcc                xTaskIncrementTick
+                0x0000000010002fec                vTaskSwitchContext
+                0x000000001000307c                vTaskPlaceOnEventList
+                0x0000000010003108                vTaskPlaceOnUnorderedEventList
+                0x00000000100031b8                vTaskPlaceOnEventListRestricted
+                0x0000000010003270                xTaskRemoveFromEventList
+                0x0000000010003338                vTaskRemoveFromUnorderedEventList
+                0x00000000100033d0                vTaskSetTimeOutState
+                0x00000000100033ec                vTaskInternalSetTimeOutState
+                0x00000000100033fc                xTaskCheckForTimeOut
+                0x000000001000344c                vTaskMissedYield
+                0x0000000010003458                vTaskSetThreadLocalStoragePointer
+                0x0000000010003474                pvTaskGetThreadLocalStoragePointer
+                0x0000000010003494                xTaskGetCurrentTaskHandle
+                0x00000000100034a0                xTaskGetSchedulerState
+                0x00000000100034b8                uxTaskResetEventItemValue
+                0x00000000100034d0                ulTaskGenericNotifyTake
+                0x0000000010003564                xTaskGenericNotifyWait
+                0x0000000010003618                xTaskGenericNotify
+                0x0000000010003700                xTaskGenericNotifyFromISR
+                0x000000001000382c                vTaskGenericNotifyGiveFromISR
+                0x0000000010003910                xTaskGenericNotifyStateClear
+                0x0000000010003940                ulTaskGenericNotifyValueClear
+ .text          0x0000000010003970      0x564 libFreeRTOS.a(timers.c.obj)
+                0x0000000010003c94                xTimerCreateTimerTask
+                0x0000000010003d0c                xTimerCreate
+                0x0000000010003db4                xTimerGenericCommandFromTask
+                0x0000000010003df8                xTimerGenericCommandFromISR
+                0x0000000010003e28                xTimerGetTimerDaemonTaskHandle
+                0x0000000010003e34                xTimerGetPeriod
+                0x0000000010003e38                vTimerSetReloadMode
+                0x0000000010003e5c                xTimerGetReloadMode
+                0x0000000010003e74                uxTimerGetReloadMode
+                0x0000000010003e8c                xTimerGetExpiryTime
+                0x0000000010003e90                pcTimerGetName
+                0x0000000010003e94                xTimerIsTimerActive
+                0x0000000010003eac                pvTimerGetTimerID
+                0x0000000010003ec0                vTimerSetTimerID
+ *fill*         0x0000000010003ed4        0xc 
+ .text          0x0000000010003ee0      0x194 libFreeRTOS.a(port.c.obj)
+                0x0000000010003f24                pxPortInitialiseStack
+                0x0000000010003f44                isr_svcall
+                0x0000000010003f48                vPortEndScheduler
+                0x0000000010003f4c                vPortYield
+                0x0000000010003f64                vPortEnterCritical
+                0x0000000010003f7c                vPortExitCritical
+                0x0000000010003f90                ulSetInterruptMaskFromISR
+                0x0000000010003f98                vClearInterruptMaskFromISR
+                0x0000000010003fa0                isr_pendsv
+                0x0000000010003fe4                isr_systick
+                0x0000000010004008                vPortSetupTimerInterrupt
+                0x0000000010004030                xPortStartScheduler
+ .text          0x0000000010004074      0x258 libFreeRTOS.a(heap_4.c.obj)
+                0x0000000010004074                pvPortMalloc
+                0x000000001000416c                vPortFree
+                0x00000000100041e8                xPortGetFreeHeapSize
+                0x00000000100041f4                xPortGetMinimumEverFreeHeapSize
+                0x0000000010004200                vPortInitialiseBlocks
+                0x0000000010004204                pvPortCalloc
+                0x0000000010004250                vPortGetHeapStats
+ .text          0x00000000100042cc       0x8c libFreeRTOS.a(list.c.obj)
+                0x00000000100042cc                vListInitialise
+                0x00000000100042e4                vListInitialiseItem
+                0x00000000100042ec                vListInsertEnd
+                0x0000000010004304                vListInsert
+                0x0000000010004334                uxListRemove
+ .text          0x0000000010004358     0x1204 libFreeRTOS.a(queue.c.obj)
+                0x0000000010004358                xQueueGenericReset
+                0x00000000100043f8                xQueueGenericCreate
+                0x0000000010004490                xQueueGenericSend
+                0x00000000100047a8                xQueueGenericSendFromISR
+                0x00000000100048c0                xQueueGiveFromISR
+                0x000000001000492c                xQueueReceive
+                0x0000000010004bcc                xQueueSemaphoreTake
+                0x0000000010004e50                xQueuePeek
+                0x00000000100050ec                xQueueReceiveFromISR
+                0x000000001000517c                xQueuePeekFromISR
+                0x00000000100051bc                uxQueueMessagesWaiting
+                0x00000000100051d0                uxQueueSpacesAvailable
+                0x00000000100051e8                uxQueueMessagesWaitingFromISR
+                0x00000000100051ec                vQueueDelete
+                0x000000001000526c                uxQueueGetQueueItemSize
+                0x0000000010005270                uxQueueGetQueueLength
+                0x0000000010005274                xQueueIsQueueEmptyFromISR
+                0x000000001000527c                xQueueIsQueueFullFromISR
+                0x0000000010005288                vQueueAddToRegistry
+                0x00000000100053a0                pcQueueGetName
+                0x0000000010005414                vQueueUnregisterQueue
+                0x000000001000548c                vQueueWaitForMessageRestricted
+ .text          0x000000001000555c       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x000000001000555c                strlen
  *(.fini)
- .fini          0x0000000010005378        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000010005378                _fini
- *fill*         0x000000001000537c        0x4 
- .fini.__stub   0x0000000010005380       0x30 linker stubs
+ .fini          0x00000000100055b8        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x00000000100055b8                _fini
+ *fill*         0x00000000100055bc        0x4 
+ .fini.__stub   0x00000000100055c0       0x30 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1719,97 +1756,97 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x00000000100053b0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000100053b0                . = ALIGN (0x4)
+ .eh_frame      0x00000000100055f0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x00000000100055f0                . = ALIGN (0x4)
 
-.glue_7         0x00000000100053b0        0x0
- .glue_7        0x00000000100053b0        0x0 linker stubs
+.glue_7         0x00000000100055f0        0x0
+ .glue_7        0x00000000100055f0        0x0 linker stubs
 
-.glue_7t        0x00000000100053b0        0x0
- .glue_7t       0x00000000100053b0        0x0 linker stubs
+.glue_7t        0x00000000100055f0        0x0
+ .glue_7t       0x00000000100055f0        0x0 linker stubs
 
-.vfp11_veneer   0x00000000100053b0        0x0
- .vfp11_veneer  0x00000000100053b0        0x0 linker stubs
+.vfp11_veneer   0x00000000100055f0        0x0
+ .vfp11_veneer  0x00000000100055f0        0x0 linker stubs
 
-.v4_bx          0x00000000100053b0        0x0
- .v4_bx         0x00000000100053b0        0x0 linker stubs
+.v4_bx          0x00000000100055f0        0x0
+ .v4_bx         0x00000000100055f0        0x0 linker stubs
 
-.iplt           0x00000000100053b0        0x0
- .iplt          0x00000000100053b0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x00000000100055f0        0x0
+ .iplt          0x00000000100055f0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x00000000100053b0      0x130
+.rodata         0x00000000100055f0      0x12c
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.main.str1.4
-                0x00000000100053b0        0xe CMakeFiles/blink.dir/src/main.c.obj
- *fill*         0x00000000100053be        0x2 
+                0x00000000100055f0        0x9 CMakeFiles/blink.dir/src/main.c.obj
+ *fill*         0x00000000100055f9        0x3 
  .rodata.hardware_alarm_claim.str1.4
-                0x00000000100053c0       0x22 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x00000000100053e2        0x2 
+                0x00000000100055fc       0x22 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x000000001000561e        0x2 
  .rodata.panic.str1.4
-                0x00000000100053e4       0x12 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x00000000100053f6        0x2 
+                0x0000000010005620       0x12 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x0000000010005632        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x00000000100053f8        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010005634        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.str1.4
-                0x0000000010005404       0x3c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005640       0x3c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x0000000010005440        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000567c        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x000000001000544c        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005688        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x0000000010005458        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005694        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x0000000010005464        0x2 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x0000000010005466        0x2 
+                0x00000000100056a0        0x2 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x00000000100056a2        0x2 
  .rodata.str1.4
-                0x0000000010005468       0x2c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100056a4       0x2c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_33.4
-                0x0000000010005494        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100056d0        0xc CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_34.5
-                0x00000000100054a0        0x8 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .rodata        0x00000000100054a8       0x28 libFreeRTOS.a(timers.c.obj)
+                0x00000000100056dc        0x8 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .rodata        0x00000000100056e4       0x28 libFreeRTOS.a(timers.c.obj)
  .rodata.str1.4
-                0x00000000100054d0       0x10 libFreeRTOS.a(timers.c.obj)
-                0x00000000100054e0                . = ALIGN (0x4)
+                0x000000001000570c       0x10 libFreeRTOS.a(timers.c.obj)
+                0x000000001000571c                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x00000000100054e0                . = ALIGN (0x4)
+                0x000000001000571c                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00000000100054e0                __exidx_start = .
+                0x000000001000571c                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00000000100054e0                __exidx_end = .
-                0x00000000100054e0                . = ALIGN (0x4)
-                0x00000000100054e0                __binary_info_start = .
+                0x000000001000571c                __exidx_end = .
+                0x000000001000571c                . = ALIGN (0x4)
+                0x000000001000571c                __binary_info_start = .
 
-.binary_info    0x00000000100054e0       0x24
+.binary_info    0x000000001000571c       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x00000000100054e0        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000571c        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x00000000100054e4        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005720        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x00000000100054e8        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005724        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x00000000100054ec        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005728        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x00000000100054f0        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000572c        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x00000000100054f4        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005730        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x00000000100054f8        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005734        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr33
-                0x00000000100054fc        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010005738        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr34
-                0x0000000010005500        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010005504                __binary_info_end = .
+                0x000000001000573c        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010005740                __binary_info_end = .
 
-.rel.dyn        0x0000000010005504        0x0
- .rel.iplt      0x0000000010005504        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010005504                . = ALIGN (0x4)
+.rel.dyn        0x0000000010005740        0x0
+ .rel.iplt      0x0000000010005740        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010005740                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -1818,7 +1855,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020000000       0xc0 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0x1ac load address 0x0000000010005504
+.data           0x00000000200000c0      0x1b4 load address 0x0000000010005740
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -1860,136 +1897,139 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  .data.stdio_uart
                 0x0000000020000230       0x18 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
                 0x0000000020000230                stdio_uart
- .data          0x0000000020000248        0x4 libFreeRTOS.a(tasks.c.obj)
- .data          0x000000002000024c        0x4 libFreeRTOS.a(port.c.obj)
-                0x0000000020000250                . = ALIGN (0x4)
+ .data.i2c0_inst
+                0x0000000020000248        0x8 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000020000248                i2c0_inst
+ .data          0x0000000020000250        0x4 libFreeRTOS.a(tasks.c.obj)
+ .data          0x0000000020000254        0x4 libFreeRTOS.a(port.c.obj)
+                0x0000000020000258                . = ALIGN (0x4)
  *(.after_data.*)
-                0x0000000020000250                . = ALIGN (0x4)
-                0x0000000020000250                PROVIDE (__mutex_array_start = .)
+                0x0000000020000258                . = ALIGN (0x4)
+                0x0000000020000258                PROVIDE (__mutex_array_start = .)
  *(SORT_BY_NAME(.mutex_array.*))
  *(.mutex_array)
- .mutex_array   0x0000000020000250        0x8 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000020000258                PROVIDE (__mutex_array_end = .)
-                0x0000000020000258                . = ALIGN (0x4)
-                0x0000000020000258                PROVIDE (__preinit_array_start = .)
+ .mutex_array   0x0000000020000258        0x8 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020000260                PROVIDE (__mutex_array_end = .)
+                0x0000000020000260                . = ALIGN (0x4)
+                0x0000000020000260                PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00001
-                0x0000000020000258        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000020000260        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .preinit_array.00010
-                0x000000002000025c        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000020000264        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .preinit_array.00020
-                0x0000000020000260        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020000268        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .preinit_array.00020
-                0x0000000020000264        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x000000002000026c        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  *(.preinit_array)
-                0x0000000020000268                PROVIDE (__preinit_array_end = .)
-                0x0000000020000268                . = ALIGN (0x4)
-                0x0000000020000268                PROVIDE (__init_array_start = .)
+                0x0000000020000270                PROVIDE (__preinit_array_end = .)
+                0x0000000020000270                . = ALIGN (0x4)
+                0x0000000020000270                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
- .init_array    0x0000000020000268        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x000000002000026c                PROVIDE (__init_array_end = .)
-                0x000000002000026c                . = ALIGN (0x4)
-                0x000000002000026c                PROVIDE (__fini_array_start = .)
+ .init_array    0x0000000020000270        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020000274                PROVIDE (__init_array_end = .)
+                0x0000000020000274                . = ALIGN (0x4)
+                0x0000000020000274                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
-                0x000000002000026c                PROVIDE (__fini_array_end = .)
+                0x0000000020000274                PROVIDE (__fini_array_end = .)
  *(.jcr)
-                0x000000002000026c                . = ALIGN (0x4)
-                0x000000002000026c                __data_end__ = .
-                0x0000000010005504                __etext = LOADADDR (.data)
+                0x0000000020000274                . = ALIGN (0x4)
+                0x0000000020000274                __data_end__ = .
+                0x0000000010005740                __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x000000002000026c        0x0 load address 0x00000000100056b0
+                0x0000000020000274        0x0 load address 0x00000000100058f4
  .tm_clone_table
-                0x000000002000026c        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020000274        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
-                0x000000002000026c        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+                0x0000000020000274        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x000000002000026c        0x0 load address 0x00000000100056b0
- .igot.plt      0x000000002000026c        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.igot.plt       0x0000000020000274        0x0 load address 0x00000000100058f4
+ .igot.plt      0x0000000020000274        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x000000002000026c        0x0 load address 0x00000000100056b0
-                0x000000002000026c                . = ALIGN (0x4)
+                0x0000000020000274        0x0 load address 0x00000000100058f4
+                0x0000000020000274                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x00000000100056b0
+.scratch_x      0x0000000020040000        0x0 load address 0x00000000100058f4
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x00000000100056b0                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x00000000100058f4                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x00000000100056b0
+.scratch_y      0x0000000020041000        0x0 load address 0x00000000100058f4
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x00000000100056b0                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x00000000100058f4                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x0000000020000270     0xc8c4
-                0x0000000020000270                . = ALIGN (0x4)
-                0x0000000020000270                __bss_start__ = .
+.bss            0x0000000020000278     0xc8c4
+                0x0000000020000278                . = ALIGN (0x4)
+                0x0000000020000278                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
- .bss           0x0000000020000270       0x50 libFreeRTOS.a(queue.c.obj)
-                0x0000000020000270                xQueueRegistry
+ .bss           0x0000000020000278       0x50 libFreeRTOS.a(queue.c.obj)
+                0x0000000020000278                xQueueRegistry
  .bss.default_alarm_pool_entries
-                0x00000000200002c0      0x100 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
- .bss.sd_table  0x00000000200003c0      0x100 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x00000000200003c0                sd_table
- .bss.sf_table  0x00000000200004c0      0x100 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x00000000200004c0                sf_table
- .bss           0x00000000200005c0       0x1c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
- .bss           0x00000000200005dc       0xf0 libFreeRTOS.a(tasks.c.obj)
-                0x00000000200005e0                pxCurrentTCB
- .bss           0x00000000200006cc       0x3c libFreeRTOS.a(timers.c.obj)
- .bss           0x0000000020000708     0xc36c libFreeRTOS.a(heap_4.c.obj)
+                0x00000000200002c8      0x100 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+ .bss.sd_table  0x00000000200003c8      0x100 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x00000000200003c8                sd_table
+ .bss.sf_table  0x00000000200004c8      0x100 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x00000000200004c8                sf_table
+ .bss           0x00000000200005c8       0x1c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .bss           0x00000000200005e4       0xf0 libFreeRTOS.a(tasks.c.obj)
+                0x00000000200005e8                pxCurrentTCB
+ .bss           0x00000000200006d4       0x3c libFreeRTOS.a(timers.c.obj)
+ .bss           0x0000000020000710     0xc36c libFreeRTOS.a(heap_4.c.obj)
  .bss.alarm_callbacks
-                0x000000002000ca74       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000002000ca7c       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.chars_available_callback
-                0x000000002000ca84        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000002000ca8c        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .bss.chars_available_param
-                0x000000002000ca88        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000002000ca90        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .bss.configured_freq
-                0x000000002000ca8c       0x28 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x000000002000ca94       0x28 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .bss.default_alarm_pool_entry_ids_high
-                0x000000002000cab4       0x10 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000002000cabc       0x10 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
  .bss.default_alarm_pool_heap_nodes
-                0x000000002000cac4       0x30 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
- .bss.drivers   0x000000002000caf4        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .bss.filter    0x000000002000caf8        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000002000cacc       0x30 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+ .bss.drivers   0x000000002000cafc        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .bss.filter    0x000000002000cb00        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss.lazy_vsnprintf
-                0x000000002000cafc        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .bss.pools     0x000000002000cb00       0x10 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000002000cb04        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .bss.pools     0x000000002000cb08       0x10 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
  .bss.sf_clz_func
-                0x000000002000cb10        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x000000002000cb10                sf_clz_func
+                0x000000002000cb18        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x000000002000cb18                sf_clz_func
  .bss.sleep_notifier
-                0x000000002000cb14        0x4 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000002000cb1c        0x4 CMakeFiles/blink.dir/pico-sdk/src/common/pico_time/time.c.obj
  .bss.target_hi
-                0x000000002000cb18       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000002000cb20       0x10 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.uart_char_to_line_feed
-                0x000000002000cb28        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x000000002000cb28                uart_char_to_line_feed
+                0x000000002000cb30        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x000000002000cb30                uart_char_to_line_feed
  .bss.uart_instance
-                0x000000002000cb2c        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .bss.claimed   0x000000002000cb30        0x1 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000002000cb34        0x4 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .bss.claimed   0x000000002000cb38        0x1 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.irq_hander_chain_free_slot_head
-                0x000000002000cb31        0x1 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000002000cb39        0x1 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .bss.timer_callbacks_pending
-                0x000000002000cb32        0x1 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000002000cb3a        0x1 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  *(COMMON)
-                0x000000002000cb34                . = ALIGN (0x4)
- *fill*         0x000000002000cb33        0x1 
-                0x000000002000cb34                __bss_end__ = .
+                0x000000002000cb3c                . = ALIGN (0x4)
+ *fill*         0x000000002000cb3b        0x1 
+                0x000000002000cb3c                __bss_end__ = .
 
-.heap           0x000000002000cb34      0x800
-                0x000000002000cb34                __end__ = .
-                0x000000002000cb34                end = __end__
+.heap           0x000000002000cb3c      0x800
+                0x000000002000cb3c                __end__ = .
+                0x000000002000cb3c                end = __end__
  *(.heap*)
- .heap          0x000000002000cb34      0x800 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x000000002000d334                __HeapLimit = .
+ .heap          0x000000002000cb3c      0x800 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x000000002000d33c                __HeapLimit = .
 
 .stack1_dummy   0x0000000020040000        0x0
  *(.stack1*)
@@ -1998,8 +2038,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x00000000100056b0        0x0
-                0x00000000100056b0                PROVIDE (__flash_binary_end = .)
+.flash_end      0x00000000100058f4        0x0
+                0x00000000100058f4                PROVIDE (__flash_binary_end = .)
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2054,8 +2094,9 @@ LOAD CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.
 LOAD CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 LOAD CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 LOAD CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+LOAD CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 LOAD libFreeRTOS.a
-LOAD /tmp/ccPki0EN.o
+LOAD /tmp/ccC7Gadk.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2145,25 +2186,27 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000576       0x2c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .ARM.attributes
-                0x00000000000005a2       0x2c libFreeRTOS.a(tasks.c.obj)
+                0x00000000000005a2       0x2c CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .ARM.attributes
-                0x00000000000005ce       0x2c libFreeRTOS.a(timers.c.obj)
+                0x00000000000005ce       0x2c libFreeRTOS.a(tasks.c.obj)
  .ARM.attributes
-                0x00000000000005fa       0x2c libFreeRTOS.a(port.c.obj)
+                0x00000000000005fa       0x2c libFreeRTOS.a(timers.c.obj)
  .ARM.attributes
-                0x0000000000000626       0x2c libFreeRTOS.a(heap_4.c.obj)
+                0x0000000000000626       0x2c libFreeRTOS.a(port.c.obj)
  .ARM.attributes
-                0x0000000000000652       0x2c libFreeRTOS.a(list.c.obj)
+                0x0000000000000652       0x2c libFreeRTOS.a(heap_4.c.obj)
  .ARM.attributes
-                0x000000000000067e       0x2c libFreeRTOS.a(queue.c.obj)
+                0x000000000000067e       0x2c libFreeRTOS.a(list.c.obj)
  .ARM.attributes
-                0x00000000000006aa       0x22 /tmp/ccPki0EN.o
+                0x00000000000006aa       0x2c libFreeRTOS.a(queue.c.obj)
  .ARM.attributes
-                0x00000000000006cc       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x00000000000006d6       0x22 /tmp/ccC7Gadk.o
  .ARM.attributes
-                0x00000000000006ea       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x00000000000006f8       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x0000000000000716       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+                0x0000000000000716       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+ .ARM.attributes
+                0x0000000000000742       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
 .comment        0x0000000000000000       0x33
  .comment       0x0000000000000000       0x33 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
@@ -2192,6 +2235,7 @@ LOAD linker stubs
  .comment       0x0000000000000033       0x34 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .comment       0x0000000000000033       0x34 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .comment       0x0000000000000033       0x34 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .comment       0x0000000000000033       0x34 libFreeRTOS.a(tasks.c.obj)
  .comment       0x0000000000000033       0x34 libFreeRTOS.a(timers.c.obj)
  .comment       0x0000000000000033       0x34 libFreeRTOS.a(port.c.obj)

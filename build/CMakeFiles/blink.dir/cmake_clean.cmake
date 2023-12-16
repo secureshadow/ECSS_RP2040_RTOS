@@ -24,6 +24,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
   "CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
   "CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
+  "CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+  "CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
   "CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
   "CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"

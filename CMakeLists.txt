@@ -29,8 +29,11 @@ target_include_directories( FreeRTOS PUBLIC
 target_link_libraries( blink 
 	pico_stdlib 
 	hardware_gpio 
+	hardware_i2c
 	FreeRTOS
 	)
 
+pico_enable_stdio_usb(blink 1)
+pico_enable_stdio_uart(blink 0)
 	
 pico_add_extra_outputs(blink)

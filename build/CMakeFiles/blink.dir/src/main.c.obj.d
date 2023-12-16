@@ -63,4 +63,7 @@ CMakeFiles/blink.dir/src/main.c.obj: \
  /home/vladik/Documentos/rp2040-freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM0/portmacro.h \
  /home/vladik/Documentos/rp2040-freertos/FreeRTOS-Kernel/include/mpu_wrappers.h \
  /home/vladik/Documentos/rp2040-freertos/FreeRTOS-Kernel/include/task.h \
- /home/vladik/Documentos/rp2040-freertos/FreeRTOS-Kernel/include/list.h
+ /home/vladik/Documentos/rp2040-freertos/FreeRTOS-Kernel/include/list.h \
+ /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+ /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+ /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h

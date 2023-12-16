@@ -702,6 +702,20 @@ CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
+CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/blink.dir/flags.make
+CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: ../pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vladik/Documentos/rp2040-freertos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -MF CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d -o CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -c /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+
+CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/rp2_common/hardware_i2c/i2c.c > CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 # Object files for target blink
 blink_OBJECTS = \
 "CMakeFiles/blink.dir/src/main.c.obj" \
@@ -749,7 +763,8 @@ blink_OBJECTS = \
 "CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" \
 "CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
-"CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+"CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
+"CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
 
 # External object files for target blink
 blink_EXTERNAL_OBJECTS =
@@ -800,11 +815,12 @@ blink.elf: CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/new_d
 blink.elf: CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 blink.elf: CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 blink.elf: CMakeFiles/blink.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+blink.elf: CMakeFiles/blink.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 blink.elf: CMakeFiles/blink.dir/build.make
 blink.elf: libFreeRTOS.a
 blink.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 blink.elf: CMakeFiles/blink.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vladik/Documentos/rp2040-freertos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking CXX executable blink.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vladik/Documentos/rp2040-freertos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable blink.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/blink.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex /home/vladik/Documentos/rp2040-freertos/build/blink.elf blink.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary /home/vladik/Documentos/rp2040-freertos/build/blink.elf blink.bin
