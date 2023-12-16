@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/pico-sdk
+# Install script for directory: /home/vladik/Documentos/rp2040-freertos/pico-sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/user/rp2040-freertos/build/pico-sdk/tools/cmake_install.cmake")
-  include("/home/user/rp2040-freertos/build/pico-sdk/src/cmake_install.cmake")
-  include("/home/user/rp2040-freertos/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/vladik/Documentos/rp2040-freertos/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/vladik/Documentos/rp2040-freertos/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/vladik/Documentos/rp2040-freertos/build/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 

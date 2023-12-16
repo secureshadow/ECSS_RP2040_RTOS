@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/pico-sdk/src/rp2_common/hardware_xosc
+# Install script for directory: /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/rp2_common/hardware_xosc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

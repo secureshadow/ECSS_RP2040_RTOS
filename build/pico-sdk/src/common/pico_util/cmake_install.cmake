@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/pico-sdk/src/common/pico_util
+# Install script for directory: /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/common/pico_util
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
