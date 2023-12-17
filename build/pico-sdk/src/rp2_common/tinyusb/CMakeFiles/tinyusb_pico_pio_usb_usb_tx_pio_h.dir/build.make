@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vladik/Documentos/rp2040-freertos
+CMAKE_SOURCE_DIR = /home/vladik/Documentos/ECSS_RP2040_RTOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vladik/Documentos/rp2040-freertos/build
+CMAKE_BINARY_DIR = /home/vladik/Documentos/ECSS_RP2040_RTOS/build
 
 # Utility rule file for tinyusb_pico_pio_usb_usb_tx_pio_h.
 
@@ -69,8 +69,8 @@ include pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_p
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h: pico-sdk/src/rp2_common/tinyusb/usb_tx.pio.h
 
 pico-sdk/src/rp2_common/tinyusb/usb_tx.pio.h: ../pico-sdk/lib/tinyusb/hw/mcu/raspberry_pi/Pico-PIO-USB/src/usb_tx.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vladik/Documentos/rp2040-freertos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating usb_tx.pio.h"
-	cd /home/vladik/Documentos/rp2040-freertos/build/pico-sdk/src/rp2_common/tinyusb && ../../../../pioasm/pioasm -o c-sdk /home/vladik/Documentos/rp2040-freertos/pico-sdk/lib/tinyusb/hw/mcu/raspberry_pi/Pico-PIO-USB/src/usb_tx.pio /home/vladik/Documentos/rp2040-freertos/build/pico-sdk/src/rp2_common/tinyusb/usb_tx.pio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vladik/Documentos/ECSS_RP2040_RTOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating usb_tx.pio.h"
+	cd /home/vladik/Documentos/ECSS_RP2040_RTOS/build/pico-sdk/src/rp2_common/tinyusb && ../../../../pioasm/pioasm -o c-sdk /home/vladik/Documentos/ECSS_RP2040_RTOS/pico-sdk/lib/tinyusb/hw/mcu/raspberry_pi/Pico-PIO-USB/src/usb_tx.pio /home/vladik/Documentos/ECSS_RP2040_RTOS/build/pico-sdk/src/rp2_common/tinyusb/usb_tx.pio.h
 
 tinyusb_pico_pio_usb_usb_tx_pio_h: pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h
 tinyusb_pico_pio_usb_usb_tx_pio_h: pico-sdk/src/rp2_common/tinyusb/usb_tx.pio.h
@@ -82,10 +82,10 @@ pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/build
 
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/clean:
-	cd /home/vladik/Documentos/rp2040-freertos/build/pico-sdk/src/rp2_common/tinyusb && $(CMAKE_COMMAND) -P CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/cmake_clean.cmake
+	cd /home/vladik/Documentos/ECSS_RP2040_RTOS/build/pico-sdk/src/rp2_common/tinyusb && $(CMAKE_COMMAND) -P CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/clean
 
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/depend:
-	cd /home/vladik/Documentos/rp2040-freertos/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vladik/Documentos/rp2040-freertos /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/rp2_common/tinyusb /home/vladik/Documentos/rp2040-freertos/build /home/vladik/Documentos/rp2040-freertos/build/pico-sdk/src/rp2_common/tinyusb /home/vladik/Documentos/rp2040-freertos/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vladik/Documentos/ECSS_RP2040_RTOS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vladik/Documentos/ECSS_RP2040_RTOS /home/vladik/Documentos/ECSS_RP2040_RTOS/pico-sdk/src/rp2_common/tinyusb /home/vladik/Documentos/ECSS_RP2040_RTOS/build /home/vladik/Documentos/ECSS_RP2040_RTOS/build/pico-sdk/src/rp2_common/tinyusb /home/vladik/Documentos/ECSS_RP2040_RTOS/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/depend
 

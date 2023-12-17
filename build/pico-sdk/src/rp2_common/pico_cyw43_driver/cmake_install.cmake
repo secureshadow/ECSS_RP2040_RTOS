@@ -1,4 +1,4 @@
-# Install script for directory: /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/rp2_common/pico_cyw43_driver
+# Install script for directory: /home/vladik/Documentos/ECSS_RP2040_RTOS/pico-sdk/src/rp2_common/pico_cyw43_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vladik/Documentos/rp2040-freertos/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cmake_install.cmake")
+  include("/home/vladik/Documentos/ECSS_RP2040_RTOS/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cmake_install.cmake")
 
 endif()
 

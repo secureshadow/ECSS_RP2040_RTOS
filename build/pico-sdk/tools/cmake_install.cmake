@@ -1,4 +1,4 @@
-# Install script for directory: /home/vladik/Documentos/rp2040-freertos/pico-sdk/tools
+# Install script for directory: /home/vladik/Documentos/ECSS_RP2040_RTOS/pico-sdk/tools
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

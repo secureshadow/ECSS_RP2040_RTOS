@@ -1,5 +1,5 @@
 CMakeFiles/pioasm.dir/pio_disassembler.cpp.o: \
- /home/vladik/Documentos/rp2040-freertos/pico-sdk/tools/pioasm/pio_disassembler.cpp \
+ /home/vladik/Documentos/ECSS_RP2040_RTOS/pico-sdk/tools/pioasm/pio_disassembler.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/array \
  /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -155,4 +155,4 @@ CMakeFiles/pioasm.dir/pio_disassembler.cpp.o: \
  /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/tuple \
  /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
- /home/vladik/Documentos/rp2040-freertos/pico-sdk/tools/pioasm/pio_disassembler.h
+ /home/vladik/Documentos/ECSS_RP2040_RTOS/pico-sdk/tools/pioasm/pio_disassembler.h

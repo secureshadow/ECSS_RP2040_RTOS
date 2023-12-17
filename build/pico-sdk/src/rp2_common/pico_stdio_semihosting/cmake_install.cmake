@@ -1,4 +1,4 @@
-# Install script for directory: /home/vladik/Documentos/rp2040-freertos/pico-sdk/src/rp2_common/pico_stdio_semihosting
+# Install script for directory: /home/vladik/Documentos/ECSS_RP2040_RTOS/pico-sdk/src/rp2_common/pico_stdio_semihosting
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

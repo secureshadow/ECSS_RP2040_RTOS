@@ -4,7 +4,7 @@
 # compile C with /usr/bin/arm-none-eabi-gcc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/vladik/Documentos/rp2040-freertos/FreeRTOS-Kernel/include -I/home/vladik/Documentos/rp2040-freertos/include -I/home/vladik/Documentos/rp2040-freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM0
+C_INCLUDES = -I/home/vladik/Documentos/ECSS_RP2040_RTOS/FreeRTOS-Kernel/include -I/home/vladik/Documentos/ECSS_RP2040_RTOS/include -I/home/vladik/Documentos/ECSS_RP2040_RTOS/FreeRTOS-Kernel/portable/GCC/ARM_CM0
 
 C_FLAGS = -mcpu=cortex-m0plus -mthumb -O3 -DNDEBUG
 
