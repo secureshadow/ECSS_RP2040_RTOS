@@ -1,5 +1,4 @@
-/home/vladik/Documentos/ECSS_RP2040_RTOS/build/CMakeFiles/master.dir
-/home/vladik/Documentos/ECSS_RP2040_RTOS/build/CMakeFiles/slave.dir
+/home/vladik/Documentos/ECSS_RP2040_RTOS/build/CMakeFiles/blink.dir
 /home/vladik/Documentos/ECSS_RP2040_RTOS/build/CMakeFiles/FreeRTOS.dir
 /home/vladik/Documentos/ECSS_RP2040_RTOS/build/CMakeFiles/ELF2UF2Build.dir
 /home/vladik/Documentos/ECSS_RP2040_RTOS/build/CMakeFiles/edit_cache.dir
